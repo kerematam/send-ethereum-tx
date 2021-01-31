@@ -13,21 +13,21 @@ We will use [Infura](https://infura.io/) as our Ethereum client; so enroll and g
 
 ## Steps
 
-### 1. Install packages
+**1. Install packages**
 
 ```bash
 npm install
 ```
 
-### 2. Create `.env` file
+**2. Create `.env` file**
 You may take `.env-sample` file as reference.
 ```bash
 cp .env-sample .env
 ```
 
-Update the project_id variable with project ID from Infura.
+Update the project_id variable with the project ID that you will have from Infura.
 
-### 3. Update Address Pair on `.env` File
+**3. Update Address Pair on `.env` File**
 
 We need to have public address and priv key that derives this public address. Update the `.env` file if you already have it. If you dont have any, just run following command :
 ```
@@ -36,10 +36,12 @@ node ./generate-addr.js
 
 Update the `.env` file accordingly.
 
-### 4. Get Free Testnet Ethereum
+**4. Get Free Testnet Ethereum**
+
 You may visit [faucet.ropsten.be](https://faucet.ropsten.be/) or any orther testnet faucet and get your free ethers to your address.
 
-### 5. Check your Tx, on code (It is hardcoded!)
+**5. Check your Tx, on code (It is hardcoded!)**
+
 Visit `send-tx.js`. You may leave it as it is. If you use this code for mainnet for real transaction, do not forget to change it!
 
 ```js
@@ -48,7 +50,7 @@ const addressTo = "0x1463500476a3ADDa33ef1dF530063fE126203186";
 const amount = "123"
 ```
 
-### 6. Run!
+**6. Run!**
 
 ```js
 node ./send-tx.js
@@ -73,7 +75,8 @@ result :  { blockHash:
   transactionIndex: 3 }
   ```
 
-### 7. Check your Tx on **Etherscan**
+**7. Check your Tx on Etherscan**
+
 Check your `transactionHash`, you can search it on [Ropsten network](https://ropsten.etherscan.io/). 
 
 Or directly go via link : 
