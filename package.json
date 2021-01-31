@@ -1,0 +1,19 @@
+{
+  "name": "create-transaction",
+  "version": "1.0.0",
+  "description": "",
+  "main": "create-address.js",
+  "scripts": {
+    "send-tx" : "node ./send-tx.js",
+    "generate-addr": "node ./generate-addr.js >>.env",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "kerematam",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "ethereumjs-wallet": "^1.0.1",
+    "web3": "^1.3.3"
+  }
+}
