@@ -1,14 +1,14 @@
 # Create Ethereum Transaction with Infura
 
-This repo is intended to show how Ethereum transaction can be made with [Infura](https://infura.io/) and [web3.js v1.3.3](https://web3js.readthedocs.io/en/v1.3.0/). 
+This repo is intended to show how the Ethereum transaction can be made with [Infura](https://infura.io/) and [web3.js v1.3.3](https://web3js.readthedocs.io/en/v1.3.0/). 
 
-The project code, higly influced by [gist](https://gist.github.com/raineorshine/c8b30db96d7532e15f85fcfe72ac719c) of [@raineorshine](https://gist.github.com/raineorshine).
+The project code, higly influenced by [gist](https://gist.github.com/raineorshine/c8b30db96d7532e15f85fcfe72ac719c) of [@raineorshine](https://gist.github.com/raineorshine).
 
-The Code, simply generates raw transaction and sign it with private key of sender address. Then Infura API is used to broadcast this raw transaction to Ethereum's Ropsten test network.
+It simply generates a raw transaction and sign it with a private key of the sender address. Then Infura API is used to broadcast this raw transaction to Ethereum's Ropsten test network.
 
 ## Pre-requirement
 
-We will use [Infura](https://infura.io/) as our Ethereum client; so enroll and get your project ID from dashboard.
+We will use [Infura](https://infura.io/) as our Ethereum client; so enroll and get your project ID from the dashboard.
 
 
 ## Steps
@@ -30,7 +30,7 @@ Update the project_id variable with the project ID that you will have from Infur
 
 **3. Update Address Pair on `.env` File**
 
-We need to have public address and priv key that derives this public address. Update the `.env` file if you already have it. If you dont have any, just run following command :
+We need to have a public address and the priv key that derives this public address. Update the `.env` file if you already have it. If you don't have any, just run the following command :
 ```
 node ./generate-addr.js
 ```
@@ -39,11 +39,11 @@ Update the `.env` file accordingly.
 
 **4. Get Free Testnet Ethereum**
 
-You may visit [faucet.ropsten.be](https://faucet.ropsten.be/) or any orther testnet faucet and get your free ethers to your address.
+You may visit [faucet.ropsten.be](https://faucet.ropsten.be/) or any other testnet faucet and get your free ethers to your address.
 
 **5. Check your Tx, on code (It is hardcoded!)**
 
-Visit `send-tx.js`. You may leave it as it is. If you use this code for mainnet for real transaction, do not forget to change it!
+Visit `send-tx.js`. You may leave it as it is. If you use this code for the mainnet to do a real transaction, do not forget to change it!
 
 ```js
 const addressTo = "0x1463500476a3ADDa33ef1dF530063fE126203186";
