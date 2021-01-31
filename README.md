@@ -20,6 +20,7 @@ npm install
 ```
 
 **2. Create `.env` file**
+
 You may take `.env-sample` file as reference.
 ```bash
 cp .env-sample .env
