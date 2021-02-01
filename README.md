@@ -57,7 +57,7 @@ const amount = "123"
 node ./send-tx.js
 ```
 
-Sample out should look like this : 
+Sample output should look like this : 
 ```js
 result :  { blockHash:
    '0x06053ada933fa0c31b7c3c48e6e1f01fa996884b3a9227ea3b6c9bb22e63e8a7',
