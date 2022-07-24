@@ -30,7 +30,7 @@ Update the project_id variable with the project ID that you will have from Infur
 
 **3. Update Address Pair on `.env` File**
 
-We need to have a public address and the priv key that derives this public address. Update the `.env` file if you already have it. If you don't have any, just run the following command :
+We need to have a public address and the private key derived from this public address. Update the `.env` file if you already have it. If you don't have any, just run the following command :
 ```
 node ./generate-addr.js
 ```
